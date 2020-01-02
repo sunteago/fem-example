@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+
+.calculator{
+    display:flex;
+    background-color: rgb(34, 31, 31);
+    width: 400px;
+    height: 600px;
+    flex-wrap: wrap;
+/*    margin: auto; Fuerza al navegador a tener misma cant. de margenes en todos lados */
+}
+
+.row{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0.7%;
+    font-family: monospace;
+    font-size: 40px;
+    font-weight:bold;
+    }
+
+.buttons {
+    color: black;
+    background-color: rgb(190, 190, 190);
+    list-style: none;
+    border:0;
+    font-family: monospace;
+    font-size: 45px;
+    font-weight:600;
+    width: 6rem;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.buttons:hover{
+    background-color: rgb(211, 211, 211) ;
+}
+
+.buttons:active{
+    background-color: rgb(150, 150, 150) ;
+}
+
+.buttons:last-child{
+    color:white;
+    background-color: rgb(255, 165, 0);
+}
+
+.buttons:last-child:hover{
+    background-color: #df9816ce;
+}
+
+.buttons:last-child:active{
+    background-color: #a87008ce;
+}
+
+.two-quarter{
+    width:49.7%;
+}
+
+.quarter{
+    width:24.6%;
+}
+
+.three-quarter{
+    width:74.7%;
+}
+
+.four-quarter{
+    width: 100%;
+}
+
+.row.result{
+    color: white;
+    padding-right:10px;
+    height:30px;
+    justify-content: flex-end;
+    align-self: center;
+
+}
